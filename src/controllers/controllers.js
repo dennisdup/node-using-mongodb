@@ -5,7 +5,7 @@ import { ProductSchema } from "../models/models"
 const Product = mongoose.model('Product', ProductSchema);
 
 
-export const addNewProduct = (req, res) => {
+export const addnewProduct = (req, res) => {
     let newProduct = new Product(req.body);
 
     newProduct.save((err, Product) => {
